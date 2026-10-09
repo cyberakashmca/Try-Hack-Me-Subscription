@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"974b128e7d471607","type":"text","text":"<center>Defensive Security Intro</center>","x":-558,"y":-48,"width":250,"height":60},
+		{"id":"7e530ba18d937985","type":"text","text":"defending and securing devices and systems","x":-200,"y":-48,"width":250,"height":60},
+		{"id":"6885dc526644a166","type":"text","text":"# Detect","x":180,"y":-48,"width":250,"height":60},
+		{"id":"d8375667f271390f","x":540,"y":-216,"width":400,"height":397,"type":"file","file":"2. Defensive Security Intro/screenshots/defence_detect.png"},
+		{"id":"bec3ee5cb0dd31a2","x":1114,"y":-52,"width":250,"height":60,"type":"text","text":"## Identify the Attack"},
+		{"id":"558880dccc7d668e","x":1440,"y":-218,"width":400,"height":393,"type":"file","file":"2. Defensive Security Intro/screenshots/defence_attack.png"},
+		{"id":"443b028332e38a2a","x":2200,"y":-220,"width":400,"height":395,"type":"file","file":"2. Defensive Security Intro/screenshots/defence_attack_url.png"},
+		{"id":"7e457a2b3727e3aa","x":2880,"y":-212,"width":400,"height":379,"type":"file","file":"2. Defensive Security Intro/screenshots/defence_attack_flag.png"}
+	],
+	"edges":[
+		{"id":"b20afff7723d7c3f","fromNode":"974b128e7d471607","fromSide":"right","toNode":"7e530ba18d937985","toSide":"left"},
+		{"id":"b2befd9d09faf744","fromNode":"7e530ba18d937985","fromSide":"right","toNode":"6885dc526644a166","toSide":"left"},
+		{"id":"ae82551b16ebfc29","fromNode":"6885dc526644a166","fromSide":"right","toNode":"d8375667f271390f","toSide":"left"},
+		{"id":"03e5471238178704","fromNode":"d8375667f271390f","fromSide":"right","toNode":"bec3ee5cb0dd31a2","toSide":"left"},
+		{"id":"38c77e3db967b26d","fromNode":"bec3ee5cb0dd31a2","fromSide":"right","toNode":"558880dccc7d668e","toSide":"left"},
+		{"id":"f740915c8e740afd","fromNode":"558880dccc7d668e","fromSide":"right","toNode":"443b028332e38a2a","toSide":"left","label":"find the url"},
+		{"id":"e000f0e608209435","fromNode":"443b028332e38a2a","fromSide":"right","toNode":"7e457a2b3727e3aa","toSide":"left"}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"b4692a0942d00255","x":-541,"y":-26,"width":264,"height":60,"type":"text","text":"# Client-Server Basics"},
+		{"id":"131cea18cf9a1d2e","x":-142,"y":-206,"width":302,"height":210,"type":"text","text":"```\n- DNS\n- Client\n- Server\n- Port\n- Protocol\n- Network\n```"},
+		{"id":"f0ff151881ea5df5","x":-142,"y":34,"width":302,"height":325,"type":"text","text":"#### Http Commands\n```\n- GET\n- POST\n- PUT\n- DELETE\n- PATCH\n- HEAD\n- OPTIONS\n- CONNECT\n- TRACE\n```"},
+		{"id":"d1d5ea8abe5da232","x":220,"y":-206,"width":368,"height":90,"type":"text","text":"What would be the host in the following URL? `https://www.iamlearning.thm/contact`"},
+		{"id":"7062155818c3687b","x":220,"y":-80,"width":368,"height":84,"type":"text","text":"What would be the scheme in the following URL? `https://www.iamlearning.thm/contact`"},
+		{"id":"4302151e9c5d0d01","x":-240,"y":-500,"width":400,"height":258,"type":"file","file":"5. Client-Server Basics/screenshots/get_method.png"},
+		{"id":"75fcb55f887f3592","x":204,"y":60,"width":400,"height":307,"type":"file","file":"5. Client-Server Basics/screenshots/scheme.png"},
+		{"id":"85913ece8b67c49f","x":700,"y":-337,"width":400,"height":353,"type":"file","file":"5. Client-Server Basics/screenshots/host_name.png"}
+	],
+	"edges":[
+		{"id":"f93ea65d8312d14f","fromNode":"d1d5ea8abe5da232","fromSide":"right","toNode":"85913ece8b67c49f","toSide":"left"},
+		{"id":"ee99ac5b3cb337b4","fromNode":"7062155818c3687b","fromSide":"bottom","toNode":"75fcb55f887f3592","toSide":"top"}
+	]
+}

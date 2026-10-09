@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"14acb82f2fed56df","type":"group","x":1220,"y":-40,"width":745,"height":508,"label":"Permissions"},
+		{"id":"56c23a151535f539","type":"group","x":1220,"y":520,"width":440,"height":243,"label":"system 32"},
+		{"id":"903637bb48bbec45","type":"text","text":"## NTFS","x":819,"y":-150,"width":161,"height":60},
+		{"id":"3bbf8134c8314bb0","type":"text","text":"## FAT16","x":819,"y":-60,"width":161,"height":60},
+		{"id":"03f15c2c3b616a3d","type":"text","text":"## FAT32","x":819,"y":20,"width":161,"height":60},
+		{"id":"2a50c4633d3d765e","type":"text","text":"# File System","x":320,"y":-30,"width":195,"height":60},
+		{"id":"05310581319b180f","type":"text","text":"modern versions of  Windows  is the **New Technology File System**","x":759,"y":-320,"width":282,"height":88},
+		{"id":"22a6ce5d625c76b6","type":"text","text":">[!IMP]\nBefore NTFS, there was  **FAT16/FAT32** (File Allocation Table) and **HPFS** (High Performance File System).","x":1240,"y":-320,"width":458,"height":154},
+		{"id":"bdd3300b303a8acc","type":"text","text":"the file system can automatically repair the folders/files on disk using information stored in a log file. This function is not possible with FAT.","x":708,"y":-540,"width":385,"height":93},
+		{"id":"0cf908153e0d01dd","type":"text","text":"Right click on `local disk c` and go to properties and see","x":775,"y":-720,"width":250,"height":60,"color":"1"},
+		{"id":"f9b7ac807358f8c4","type":"text","text":"## HPFS","x":819,"y":100,"width":161,"height":60},
+		{"id":"e077a50da6f3f817","type":"file","file":"2. Cyber Security 101/5. Windows Fundamentals/screenshots/files_folder_permission.png","x":1260,"y":0,"width":685,"height":140},
+		{"id":"ff0d93973443663c","type":"file","file":"2. Cyber Security 101/5. Windows Fundamentals/screenshots/check_it.png","x":1260,"y":170,"width":400,"height":278},
+		{"id":"d43408b503549b84","type":"file","file":"2. Cyber Security 101/5. Windows Fundamentals/screenshots/sys32.png","x":1240,"y":540,"width":400,"height":99},
+		{"id":"f7c6f4208e757527","type":"text","text":"The System32 folder holds the important files that are critical for the operating system.","x":1240,"y":680,"width":400,"height":63},
+		{"id":"9f69326bbe8d0de6","type":"text","text":"# User Account","x":1220,"y":1120,"width":250,"height":60},
+		{"id":"6b757400ea5ab049","type":"text","text":"User accounts can be one of two types on a typical local Windows system: **Administrator** & **Standard User**.","x":1620,"y":1115,"width":448,"height":70},
+		{"id":"df25a5e4445e1375","type":"text","text":"- An Administrator can make changes to the system: add users, delete users, modify groups, modify settings on the system, etc. \n\n- A Standard User can only make changes to folders/files attributed to the user & can't perform system-level changes, such as install programs.","x":1283,"y":1320,"width":1123,"height":72}
+	],
+	"edges":[
+		{"id":"e5d38a2a9c91ac77","fromNode":"2a50c4633d3d765e","fromSide":"right","toNode":"903637bb48bbec45","toSide":"left"},
+		{"id":"c3435390fe2212c2","fromNode":"2a50c4633d3d765e","fromSide":"right","toNode":"3bbf8134c8314bb0","toSide":"left"},
+		{"id":"f16ae1af90824351","fromNode":"2a50c4633d3d765e","fromSide":"right","toNode":"03f15c2c3b616a3d","toSide":"left"},
+		{"id":"7f41ba2c3c03c1b5","fromNode":"2a50c4633d3d765e","fromSide":"right","toNode":"f9b7ac807358f8c4","toSide":"left"},
+		{"id":"d523ff9667145913","fromNode":"903637bb48bbec45","fromSide":"top","toNode":"05310581319b180f","toSide":"bottom"},
+		{"id":"1130895ac172c77d","fromNode":"05310581319b180f","fromSide":"top","toNode":"bdd3300b303a8acc","toSide":"bottom"},
+		{"id":"a8e6a5b3238860a9","fromNode":"0cf908153e0d01dd","fromSide":"bottom","toNode":"bdd3300b303a8acc","toSide":"top","label":"how to see"},
+		{"id":"1839568abb57e4ac","fromNode":"f7c6f4208e757527","fromSide":"top","toNode":"d43408b503549b84","toSide":"bottom"},
+		{"id":"879b9356ca9ea467","fromNode":"9f69326bbe8d0de6","fromSide":"right","toNode":"6b757400ea5ab049","toSide":"left"},
+		{"id":"b5885be07f2a8271","fromNode":"6b757400ea5ab049","fromSide":"bottom","toNode":"df25a5e4445e1375","toSide":"top"}
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"c3938a3fba113cb3","type":"text","text":"# Computer","x":-1080,"y":-220,"width":250,"height":60},
+		{"id":"274c6d25ee44e807","x":-500,"y":-365,"width":250,"height":60,"type":"text","text":"### Laptop"},
+		{"id":"1f73421890cc6b4e","type":"text","text":"### Desktop","x":-500,"y":-280,"width":250,"height":60},
+		{"id":"8f6d7b206e04d30e","type":"text","text":"### WorkStation","x":-500,"y":-180,"width":250,"height":60},
+		{"id":"91c74919ad5a3931","type":"text","text":"### Server","x":-500,"y":-90,"width":250,"height":60},
+		{"id":"66df281375c81da2","x":-1080,"y":-425,"width":250,"height":60,"type":"text","text":"Sab ke pas screen hoti h lekin server ke pas nahi"},
+		{"id":"6be02e4ca081c58c","x":-90,"y":-280,"width":250,"height":60,"type":"text","text":"Sustained performance at a fixed location."},
+		{"id":"2cbe6f17b12e6620","x":-90,"y":-180,"width":250,"height":60,"type":"text","text":"Precision and reliability for professional tasks."},
+		{"id":"6e6c4afebcabb7c2","x":-90,"y":-90,"width":250,"height":60,"type":"text","text":"Providing services to many users over a network."},
+		{"id":"7611aca51ff200af","x":-90,"y":-365,"width":250,"height":60,"type":"text","text":"Portable everyday computing."},
+		{"id":"19bea8fe37421a07","x":-860,"y":160,"width":1170,"height":233,"type":"text","text":"**We continue to find computers hiding in everyday objects:**\n\n|Type|What it is|Examples|\n|---|---|---|\n|**Smartphone**|Pocket-sized computer optimized for battery life and connectivity|iPhone, Android phone|\n|**Tablet**|Touch-first computer with larger screen|iPad, drawing tablet|\n|**IoT device**|Network-connected device with a single purpose|Thermostat, smart doorbell, fitness tracker|\n|**Embedded computer**|Computer built into another device|Coffee maker controller, automatic door sensor, lamp dimmer chip|"},
+		{"id":"148aa3118a39da36","x":-860,"y":420,"width":732,"height":169,"type":"text","text":"|Computer Type|Screen and Keyboard|Main Purpose|\n|---|---|---|\n|Laptop|Yes|Portable everyday computing.|\n|Desktop|Yes|Sustained performance at a fixed location.|\n|Workstation|Yes|Precision and reliability for professional tasks.|\n|Server|No|Providing services to many users over a network.|"}
+	],
+	"edges":[
+		{"id":"41f43c05045a70cb","fromNode":"c3938a3fba113cb3","fromSide":"right","toNode":"274c6d25ee44e807","toSide":"left"},
+		{"id":"e13ebf1f0dbc0114","fromNode":"c3938a3fba113cb3","fromSide":"right","toNode":"1f73421890cc6b4e","toSide":"left"},
+		{"id":"924a5639b09502de","fromNode":"c3938a3fba113cb3","fromSide":"right","toNode":"8f6d7b206e04d30e","toSide":"left"},
+		{"id":"3d9052769d1be483","fromNode":"c3938a3fba113cb3","fromSide":"right","toNode":"91c74919ad5a3931","toSide":"left"},
+		{"id":"7312c08b2c19ab48","fromNode":"c3938a3fba113cb3","fromSide":"top","toNode":"66df281375c81da2","toSide":"bottom"},
+		{"id":"8daed9c23e847671","fromNode":"274c6d25ee44e807","fromSide":"right","toNode":"7611aca51ff200af","toSide":"left"},
+		{"id":"c4856e8a63358566","fromNode":"1f73421890cc6b4e","fromSide":"right","toNode":"6be02e4ca081c58c","toSide":"left"},
+		{"id":"02a1d6a2542c5d70","fromNode":"8f6d7b206e04d30e","fromSide":"right","toNode":"2cbe6f17b12e6620","toSide":"left"},
+		{"id":"8b6506a237f7a636","fromNode":"91c74919ad5a3931","fromSide":"right","toNode":"6e6c4afebcabb7c2","toSide":"left"}
+	]
+}

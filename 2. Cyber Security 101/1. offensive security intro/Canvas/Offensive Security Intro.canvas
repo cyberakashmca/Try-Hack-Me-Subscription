@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"ba5e5c622b8a0a95","type":"text","text":"###### [[2. Cyber Security 101/1. offensive security intro/Files/Offensive Security Intro]]","x":-380,"y":-357,"width":246,"height":53},
+		{"id":"1641a7fff3e97f69","type":"text","text":"Think Like a Hacker","x":-14,"y":-360,"width":250,"height":60},
+		{"id":"f3810ec0eda25fed","x":520,"y":-360,"width":250,"height":60,"type":"text","text":"### Fake  Bank"},
+		{"id":"7dd3b40b2e9f7ebe","x":1100,"y":-509,"width":400,"height":358,"type":"file","file":"1. Offensive Security Intro/screenshots/fake_bank_account.png"},
+		{"id":"6b9b43b18ec508e1","x":1175,"y":-760,"width":250,"height":60,"type":"text","text":"Find Hidden Page"},
+		{"id":"8eb01985ee261a1e","x":1920,"y":-972,"width":250,"height":60,"type":"text","text":"Gobuster"},
+		{"id":"d7dfbc39b3762c77","type":"text","text":"ffuf","x":1920,"y":-869,"width":250,"height":60},
+		{"id":"255bbf43fb6e4bc1","x":1920,"y":-769,"width":250,"height":60,"type":"text","text":"Feroxbuster"},
+		{"id":"effa8cfcbed13318","x":1920,"y":-669,"width":250,"height":60,"type":"text","text":"Dirsearch"},
+		{"id":"ca4114f732bdc164","x":1920,"y":-569,"width":250,"height":60,"type":"text","text":"Dirb"},
+		{"id":"cabd01cbade9f03e","x":2340,"y":-539,"width":400,"height":313,"type":"file","file":"1. Offensive Security Intro/screenshots/dirb_fake_bank.png"},
+		{"id":"29c9aead2434b439","x":2966,"y":-625,"width":250,"height":60,"type":"text","text":"bank-transfer"},
+		{"id":"1bfe360b696eb7df","x":2966,"y":-509,"width":250,"height":60,"type":"text","text":"images"},
+		{"id":"2395e3b145ae2ee7","x":3420,"y":-773,"width":400,"height":357,"type":"file","file":"1. Offensive Security Intro/screenshots/fake_bank_transfer.png"},
+		{"id":"adff765c36f08053","x":3980,"y":-624,"width":250,"height":60,"type":"text","text":"deposit balance"},
+		{"id":"a9cae85c04f20453","x":4420,"y":-773,"width":400,"height":362,"type":"file","file":"1. Offensive Security Intro/screenshots/fake_bank_deposit.png"}
+	],
+	"edges":[
+		{"id":"0e866d14a49f3696","fromNode":"ba5e5c622b8a0a95","fromSide":"right","toNode":"1641a7fff3e97f69","toSide":"left"},
+		{"id":"b8a704b38e3efa74","fromNode":"1641a7fff3e97f69","fromSide":"right","toNode":"f3810ec0eda25fed","toSide":"left","label":"example"},
+		{"id":"e66c836eac3847df","fromNode":"f3810ec0eda25fed","fromSide":"right","toNode":"7dd3b40b2e9f7ebe","toSide":"left","label":"http://fakebank.thm/"},
+		{"id":"dbfa9907531c1abe","fromNode":"7dd3b40b2e9f7ebe","fromSide":"top","toNode":"6b9b43b18ec508e1","toSide":"bottom"},
+		{"id":"442f39e07e892444","fromNode":"6b9b43b18ec508e1","fromSide":"right","toNode":"8eb01985ee261a1e","toSide":"left"},
+		{"id":"4415cffb7df1c469","fromNode":"6b9b43b18ec508e1","fromSide":"right","toNode":"d7dfbc39b3762c77","toSide":"left"},
+		{"id":"a9e6131a896499ee","fromNode":"6b9b43b18ec508e1","fromSide":"right","toNode":"255bbf43fb6e4bc1","toSide":"left"},
+		{"id":"b48ecb5eaeb5f4b7","fromNode":"6b9b43b18ec508e1","fromSide":"right","toNode":"effa8cfcbed13318","toSide":"left"},
+		{"id":"cf2a9cade3558423","fromNode":"6b9b43b18ec508e1","fromSide":"right","toNode":"ca4114f732bdc164","toSide":"left"},
+		{"id":"85734292d066b572","fromNode":"ca4114f732bdc164","fromSide":"bottom","toNode":"cabd01cbade9f03e","toSide":"left"},
+		{"id":"e4c33b41f6c6040a","fromNode":"cabd01cbade9f03e","fromSide":"right","toNode":"29c9aead2434b439","toSide":"left"},
+		{"id":"e70f7cd45aebbc13","fromNode":"cabd01cbade9f03e","fromSide":"right","toNode":"1bfe360b696eb7df","toSide":"left"},
+		{"id":"ee4cc2c91d5dc52a","fromNode":"29c9aead2434b439","fromSide":"right","toNode":"2395e3b145ae2ee7","toSide":"left"},
+		{"id":"0907a3126ec0be27","fromNode":"2395e3b145ae2ee7","fromSide":"right","toNode":"adff765c36f08053","toSide":"left"},
+		{"id":"db98af619871899b","fromNode":"adff765c36f08053","fromSide":"right","toNode":"a9cae85c04f20453","toSide":"left"}
+	]
+}

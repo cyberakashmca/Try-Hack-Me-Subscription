@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"id":"44526d899164201b","type":"text","text":"# Press Power Button","x":-591,"y":-112,"width":253,"height":60},
+		{"id":"f3f737d8fc366c5a","type":"file","file":"3. Inside a Computer System/screenshots/what_happend_when_you_press_power_button.png","x":-240,"y":-142,"width":1060,"height":121},
+		{"id":"575c8d019cad06f7","type":"text","text":"UEFI -> os or plateform firmware ke bich m 1 interface provide karati hai , ab UEFI ko replace karake BIOS kar diya gaya hai","x":237,"y":160,"width":334,"height":100},
+		{"id":"f47cc96f9772d683","type":"text","text":"Centeral system sabase pahale UEFI ko manage karata hai","x":204,"y":467,"width":400,"height":87},
+		{"id":"c358d6e47519e50c","type":"text","text":"# Power on self test","x":279,"y":680,"width":250,"height":60},
+		{"id":"9af6f6c93ff0f119","type":"text","text":"ab power on hote hi self testing hogi , ki sab kuchh thik hai na agar kahi dikkat hogi to alarm single milega, ","x":216,"y":840,"width":377,"height":83},
+		{"id":"2fc7d123765d0c11","type":"text","text":"# Select Boot Device","x":844,"y":852,"width":250,"height":60},
+		{"id":"b1d6e38a48cc165f","type":"text","text":"UEFI hamare computer mai prioritizes ko ordered list mai hold karati h, or dekhati hai ki kis device ko sabase pahle boot kiya jaye","x":792,"y":1040,"width":355,"height":100},
+		{"id":"75fc426a84dfbefb","type":"text","text":"# Initiate Bootloader","x":1364,"y":1060,"width":250,"height":60},
+		{"id":"c577667e0090f4a8","type":"text","text":"sab kuchh dekhane ke bad `load routine` ko sabsae pahale boot karata hai , or bootloader ram mai selected boot device ko transfer kar deta hai , 1 bar transfer hone ke bad UEFI os ke diffrent component ko control de deti h","x":1259,"y":1240,"width":460,"height":122},
+		{"id":"978f9ef130750f0c","type":"text","text":"# Computer Started","x":1896,"y":1269,"width":250,"height":60},
+		{"id":"06078f25028adf6e","type":"text","text":"# Press Button","x":-591,"y":230,"width":250,"height":60},
+		{"id":"fb40b85ba68057b6","type":"text","text":"we press the power button on our computer system, a signal is sent to the PSU to allow power to flow.","x":-316,"y":320,"width":433,"height":70},
+		{"id":"8e768bdb4529c6df","type":"text","text":"# Firmware starts","x":-224,"y":480,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"894b231f0e9a2c70","fromNode":"44526d899164201b","fromSide":"right","toNode":"f3f737d8fc366c5a","toSide":"left"},
+		{"id":"6e97ba638090ea8e","fromNode":"06078f25028adf6e","fromSide":"bottom","toNode":"fb40b85ba68057b6","toSide":"left","color":"5"},
+		{"id":"544a0241e152c9e2","fromNode":"fb40b85ba68057b6","fromSide":"bottom","toNode":"8e768bdb4529c6df","toSide":"top","color":"5"},
+		{"id":"6874867d816aadc4","fromNode":"8e768bdb4529c6df","fromSide":"right","toNode":"f47cc96f9772d683","toSide":"left","color":"5"},
+		{"id":"3c7e41099fab2194","fromNode":"f47cc96f9772d683","fromSide":"top","toNode":"575c8d019cad06f7","toSide":"bottom","label":"what is UEFI"},
+		{"id":"26f1ea821874d9bb","fromNode":"f47cc96f9772d683","fromSide":"bottom","toNode":"c358d6e47519e50c","toSide":"top","color":"5"},
+		{"id":"906b7c77d2ca36bd","fromNode":"c358d6e47519e50c","fromSide":"bottom","toNode":"9af6f6c93ff0f119","toSide":"top","color":"5"},
+		{"id":"50897c85428dd42c","fromNode":"9af6f6c93ff0f119","fromSide":"right","toNode":"2fc7d123765d0c11","toSide":"left","color":"5"},
+		{"id":"779ec8923e367004","fromNode":"2fc7d123765d0c11","fromSide":"bottom","toNode":"b1d6e38a48cc165f","toSide":"top","color":"5"},
+		{"id":"2cab37a52b040583","fromNode":"b1d6e38a48cc165f","fromSide":"right","toNode":"75fc426a84dfbefb","toSide":"left","color":"5"},
+		{"id":"d88082bcd8891e07","fromNode":"75fc426a84dfbefb","fromSide":"bottom","toNode":"c577667e0090f4a8","toSide":"top","color":"5"},
+		{"id":"d50b5c43b2720a03","fromNode":"c577667e0090f4a8","fromSide":"right","toNode":"978f9ef130750f0c","toSide":"left","color":"5"}
+	]
+}

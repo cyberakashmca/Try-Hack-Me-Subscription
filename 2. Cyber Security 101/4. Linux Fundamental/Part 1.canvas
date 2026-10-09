@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"53a08a330db68b74","x":-279,"y":-247,"width":299,"height":87,"type":"text","text":"|   |   |\n|---|---|\n|`whoami`|tells you who you are on the system|"},
+		{"id":"5e776c8ad7c97b79","x":-279,"y":-117,"width":299,"height":77,"type":"text","text":"|   |   |\n|---|---|\n|`echo`|output some specific text that is provided|"},
+		{"id":"5e375ef1cf6eefa0","x":-279,"y":0,"width":396,"height":155,"type":"text","text":"|   |   |\n|---|---|\n|`ls`|list what's in the current folder|\n|`cd`|change directory — move into a folder|\n|`cat`|show the contents of a file|\n|`pwd`|print working directory — \"where am I?\"|"},
+		{"id":"2e747874208c9686","x":-860,"y":-100,"width":252,"height":60,"type":"text","text":"# Part 1"},
+		{"id":"731fdbf0b6637da7","x":-788,"y":234,"width":269,"height":60,"type":"text","text":"Check file in side multiple folder"},
+		{"id":"5b926e2ca7eb4495","x":-819,"y":400,"width":331,"height":354,"type":"text","text":"```\n tryhackme@linux1:~$ ls -R *\naccess.log\n\nfolder1:\npasswords.txt\n\nfolder2:\n\nfolder3:\n\nfolder4:\ntryhackme@linux1:~$ \n```"},
+		{"id":"a4da56ea5142cc2e","x":-279,"y":-480,"width":630,"height":102,"type":"text","text":"|   |   |\n|---|---|\n|`find`|search for files by their name. For example, `find -name passwords.txt`|\n|`grep`|searches _inside_ for text. For example, `grep \"password123\" passwords.txt`|"},
+		{"id":"13b982482c4f6e7d","x":-2440,"y":-154,"width":1475,"height":169,"type":"text","text":"| Symbol | Naam / Meaning      | Kya karta hai?                                                               | Example                 | Result                                             |\n| ------ | ------------------- | ---------------------------------------------------------------------------- | ----------------------- | -------------------------------------------------- |\n| `&`    | Background operator | Command ko **background** me chala deta hai                                  | `ping google.com &`     | Ping background me chalega, terminal usable rahega |\n| `&&`   | AND operator        | Pehli command **successfully complete** ho tabhi doosri command chalata hai  | `mkdir test && cd test` | Directory bani → tab `cd test` chalega             |\n| `>`    | Output redirection  | Command ka output file me **likhta hai**, purana content overwrite karta hai | `ls > files.txt`        | `ls` ka output `files.txt` me save hoga            |\n| `>>`   | Append redirection  | Output ko file ke **end me add** karta hai, purana content nahi mitata       | `ls >> files.txt`       | `ls` ka output existing content ke neeche add hoga |\n"}
+	],
+	"edges":[
+		{"id":"3768026c1c2d36ff","fromNode":"2e747874208c9686","fromSide":"right","toNode":"53a08a330db68b74","toSide":"left"},
+		{"id":"e22dbfe1c9b4d106","fromNode":"2e747874208c9686","fromSide":"right","toNode":"5e776c8ad7c97b79","toSide":"left"},
+		{"id":"fdf5d60199f0dd7e","fromNode":"2e747874208c9686","fromSide":"right","toNode":"5e375ef1cf6eefa0","toSide":"left"},
+		{"id":"d249b041709e9e3c","fromNode":"2e747874208c9686","fromSide":"bottom","toNode":"731fdbf0b6637da7","toSide":"top"},
+		{"id":"520b7a9bd658f1bf","fromNode":"731fdbf0b6637da7","fromSide":"bottom","toNode":"5b926e2ca7eb4495","toSide":"top"},
+		{"id":"b572478e0cfa9150","fromNode":"2e747874208c9686","fromSide":"top","toNode":"a4da56ea5142cc2e","toSide":"left"},
+		{"id":"16bc335fcd7d2e40","fromNode":"2e747874208c9686","fromSide":"left","toNode":"13b982482c4f6e7d","toSide":"right"}
+	]
+}

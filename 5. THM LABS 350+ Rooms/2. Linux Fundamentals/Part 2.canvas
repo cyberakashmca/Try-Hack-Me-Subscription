@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"01e8b22d302d4931","x":-80,"y":420,"width":760,"height":360,"type":"group","label":"Permissions"},
+		{"id":"f30158ed90d26e11","x":-585,"y":-78,"width":250,"height":60,"type":"text","text":"# Linux"},
+		{"id":"651c9e797b4b60a2","x":-220,"y":-78,"width":266,"height":60,"type":"text","text":"Connected machine using `SSH`"},
+		{"id":"c1e46ae8ef051c02","x":160,"y":-78,"width":250,"height":60,"type":"text","text":"username : tryhackme\npassword  : tryhackme"},
+		{"id":"6f32e8b4a6b590a1","x":160,"y":80,"width":250,"height":77,"type":"text","text":"##### Syntax\nssh username@ip_address"},
+		{"id":"08477bb41f69bae3","x":699,"y":94,"width":281,"height":50,"type":"text","text":"ssh tryhackme@10.48.160.114"},
+		{"id":"87c73dc9b688e59e","x":-700,"y":119,"width":466,"height":241,"type":"text","text":"| Command | Full Name      | Purpose                      |\n| ------- | -------------- | ---------------------------- |\n| `touch` | touch          | Create file                  |\n| `mkdir` | make directory | Create a folder              |\n| `cp`    | copy           | Copy a file or folder        |\n| `mv`    | move           | Move a file or folder        |\n| `rm`    | remove         | Remove a file or folder      |\n| `file`  | file           | Determine the type of a file |\n"},
+		{"id":"a85f22e831ad9bf3","x":280,"y":440,"width":380,"height":147,"type":"text","text":"| Group  | Permissions | Calculation | Value |\n| ------ | ----------- | ----------- | ----: |\n| Owner  | `rwx`       | 4 + 2 + 1   |     7 |\n| Group  | `rwx`       | 4 + 2 + 1   |     7 |\n| Others | `rwx`       | 4 + 2 + 1   |     7 |\n"},
+		{"id":"6b715d511a99b562","x":-60,"y":446,"width":294,"height":134,"type":"text","text":"| Section | Applies To | Example |\n| ------- | ---------- | ------- |\n| First 3 | Owner      | `rwx`   |\n| Next 3  | Group      | `rwx`   |\n| Last 3  | Others     | `rwx`   |\n"},
+		{"id":"82d8123b7efc5361","x":-60,"y":626,"width":614,"height":134,"type":"text","text":"| Symbolic    | Numeric | Meaning                                              |\n| ----------- | ------: | ---------------------------------------------------- |\n| `rwxr-xr-x` |   `755` | Owner can do everything, others can read and execute |\n| `rw-r--r--` |   `644` | Owner can read/write, others can only read           |\n| `rwx------` |   `700` | Only the owner has access                            |\n"},
+		{"id":"4a9fd014fb39e8f8","x":-80,"y":880,"width":877,"height":169,"type":"text","text":"| Directory | Full Name / Meaning          | Purpose                                                                       |\n| --------- | ---------------------------- | ----------------------------------------------------------------------------- |\n| `/etc`    | **Etcetera / Configuration** | System aur applications ki configuration files store karta hai                |\n| `/var`    | **Variable**                 | Frequently changing data jaise logs, cache, spool files etc. store karta hai  |\n| `/root`   | **Root User Home Directory** | `root` user ka home directory hota hai                                        |\n| `/tmp`    | **Temporary**                | Temporary files store karta hai; usually short-term data ke liye use hota hai |\n"}
+	],
+	"edges":[
+		{"id":"1687cacbe63e2626","fromNode":"f30158ed90d26e11","fromSide":"right","toNode":"651c9e797b4b60a2","toSide":"left"},
+		{"id":"97c1e6c54b153f15","fromNode":"651c9e797b4b60a2","fromSide":"right","toNode":"c1e46ae8ef051c02","toSide":"left"},
+		{"id":"1e9def43f19d635e","fromNode":"c1e46ae8ef051c02","fromSide":"bottom","toNode":"6f32e8b4a6b590a1","toSide":"top"},
+		{"id":"3b74904b2921c541","fromNode":"6f32e8b4a6b590a1","fromSide":"right","toNode":"08477bb41f69bae3","toSide":"left","label":"example"}
+	]
+}
